@@ -1,4 +1,5 @@
 from flask import Flask, Response, request, abort
+from parse_kotlin import parse_kotlin
 import json
 
 
@@ -14,7 +15,7 @@ def parse_code():
     if request.method == 'POST':
         if not request.json:
             abort(400)
-        print(request.json)    
+        parse_kotlin(request)  
     return Response(json.dumps(request.json))
 
 if __name__ == '__main__':
