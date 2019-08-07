@@ -1,1 +1,1 @@
-"kotlin says oi"
+fun main() { println("hello kotlin!")}

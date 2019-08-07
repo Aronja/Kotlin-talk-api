@@ -1,3 +1,7 @@
 kotlin/
 .vscode
 __pycache__
+META-INF/
+*.pyc
+*.jar
+*.kt
