@@ -16,8 +16,8 @@ def parse_code():
     if request.method == 'POST':
         if not request.json:
             abort(400)
-        kotlin_file = parse_kotlin(request) 
-        compile_kotlin(kotlin_file)
+        parse_kotlin(request) 
+        compile_kotlin()
     return Response(json.dumps(request.json))
 
 if __name__ == '__main__':
