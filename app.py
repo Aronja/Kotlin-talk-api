@@ -6,9 +6,6 @@ from process_kotlin import process_kotlin
 
 app = Flask(__name__)
 
-@app.route('/')
-def hello_world():
-    return 'Hello, World!'
 
 @app.route('/kotlin', methods=['POST'])
 def parse_code():
